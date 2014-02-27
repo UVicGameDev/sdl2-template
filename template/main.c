@@ -5,7 +5,7 @@
 int main(int argc, char *argv[])
 {
     // initialize SDL
-    if (SDL_Init(SDL_INIT_EVERYTHING)) {
+    if (SDL_Init(SDL_INIT_VIDEO)) {
         printf("SDL_Init: %s\n", SDL_GetError());
         return -1;
     }
